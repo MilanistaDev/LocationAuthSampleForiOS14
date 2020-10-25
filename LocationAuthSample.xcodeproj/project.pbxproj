@@ -18,6 +18,7 @@
 		FDD3A2AA2545B857001CAA82 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDD3A2A92545B857001CAA82 /* Settings.storyboard */; };
 		FDD3A2B22545C329001CAA82 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD3A2B12545C329001CAA82 /* MapViewController.swift */; };
 		FDD3A2BA2545C48B001CAA82 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD3A2B92545C48B001CAA82 /* LocationManager.swift */; };
+		FDD3A2D32545D7E0001CAA82 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD3A2D22545D7E0001CAA82 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		FDD3A2B92545C48B001CAA82 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		FDD3A2BE2545C513001CAA82 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
 		FDD3A2BF2545C513001CAA82 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		FDD3A2D22545D7E0001CAA82 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				FDD3A26E2545B5D0001CAA82 /* Main.storyboard */,
 				FDD3A2B12545C329001CAA82 /* MapViewController.swift */,
 				FDD3A29E2545B820001CAA82 /* Map.storyboard */,
+				FDD3A2D22545D7E0001CAA82 /* SettingsViewController.swift */,
 				FDD3A2A92545B857001CAA82 /* Settings.storyboard */,
 				FDD3A2B92545C48B001CAA82 /* LocationManager.swift */,
 				FDD3A2712545B5D0001CAA82 /* Assets.xcassets */,
@@ -222,7 +225,8 @@
 			developmentRegion = ja_JP;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-                ja,
+				ja_JP,
+				ja,
 				Base,
 			);
 			mainGroup = FDD3A25C2545B5D0001CAA82;
@@ -274,6 +278,7 @@
 				FDD3A2BA2545C48B001CAA82 /* LocationManager.swift in Sources */,
 				FDD3A2692545B5D0001CAA82 /* AppDelegate.swift in Sources */,
 				FDD3A2B22545C329001CAA82 /* MapViewController.swift in Sources */,
+				FDD3A2D32545D7E0001CAA82 /* SettingsViewController.swift in Sources */,
 				FDD3A26B2545B5D0001CAA82 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

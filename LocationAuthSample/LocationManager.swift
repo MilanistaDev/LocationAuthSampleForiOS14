@@ -50,6 +50,29 @@ final class LocationManager: NSObject, CLLocationManagerDelegate {
         //delegate.tracingLocationDidFailWithError(error: error)
     }
 
+    /// 位置情報の精度許可ステータスがreducedAccuracyだったらfullAccuracyにできるように許可を求める
+    func requestFullAccuracy() {
+        if #available(iOS 14.0, *) {
+            if self.locationManager?.accuracyAuthorization == .reducedAccuracy {
+                self.locationManager?.requestTemporaryFullAccuracyAuthorization(withPurposeKey: "WantsToPreciseLocForNotice") { _ in
+                    if self.locationManager?.accuracyAuthorization == .fullAccuracy {
+                        NotificationCenter.default.post(name: Notification.Name(rawValue: "NotifyChange"), object: nil)
+                        //self.startUpdatingLocation()
+                    }
+                }
+            }
+        }
+    }
+
+    /// 位置情報の精度が低いかどうかを判定
+    func isReducedAccuracy() -> Bool {
+        if #available(iOS 14.0, *) {
+            return self.locationManager?.accuracyAuthorization == .reducedAccuracy
+        } else {
+            return false
+        }
+    }
+
     // MARK: - CLLocationManagerDelegate Method
 
     func requestLocation() {
