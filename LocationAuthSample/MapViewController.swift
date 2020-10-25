@@ -17,17 +17,12 @@ final class MapViewController: UIViewController {
         getLocation()
     }
 
-    /// 位置情報を取得
     private func getLocation() {
         let lm = LocationManager.sharedInstance
         lm.delegate = self
         lm.startUpdatingLocation()
     }
 
-    /// 緯度経度を取得し地図の中央に設定する
-    /// - Parameters:
-    ///   - lat: 地図の中央の緯度
-    ///   - lon: 地図の中央の経度
     private func moveMapView(lat: Double, lon: Double) {
         var coordinate = CLLocationCoordinate2D()
         coordinate.latitude = lat
@@ -40,7 +35,7 @@ final class MapViewController: UIViewController {
 
 extension MapViewController: LocationServiceDelegate {
     func tracingLocation(currentLocation: CLLocation) {
-        // ユーザの現在地の緯度経度を取得し地図の中央に設定する
+        // move to center of map
         self.moveMapView(lat: currentLocation.coordinate.latitude,
                          lon: currentLocation.coordinate.longitude)
     }

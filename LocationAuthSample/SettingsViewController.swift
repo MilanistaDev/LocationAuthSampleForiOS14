@@ -15,7 +15,7 @@ final class SettingsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title = "位置情報設定"
+        self.navigationItem.title = "Location Info Settings"
         self.lm = LocationManager.sharedInstance
         self.setUpTableView()
         self.notification()
@@ -52,19 +52,19 @@ extension SettingsViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.section == 0 {
             let cell = UITableViewCell()
-            cell.textLabel?.text = "位置情報設定"
+            cell.textLabel?.text = "Location Info Settings"
             cell.accessoryType = .disclosureIndicator
             return cell
         } else {
             if indexPath.row == 0 {
                 let cell = tableView.dequeueReusableCell(withIdentifier: "detail")!
-                cell.textLabel?.text = "正確な位置情報許可状態"
+                cell.textLabel?.text = "Precise Status"
                 cell.detailTextLabel?.text = self.lm.isReducedAccuracy() ? "OFF": "ON"
                 cell.selectionStyle = .none
                 return cell
             } else {
                 let cell = UITableViewCell()
-                cell.textLabel?.text = "正確な位置情報 1度だけ許可"
+                cell.textLabel?.text = "Precise Allow once"
                 cell.textLabel?.textColor = .systemBlue
                 return cell
             }
@@ -81,7 +81,7 @@ extension SettingsViewController: UITableViewDelegate {
             }
         } else {
             if indexPath.row == 1 {
-                // 位置情報精度を上げるように促す
+                // Show dialog for precise
                 self.lm.requestFullAccuracy()
             }
         }

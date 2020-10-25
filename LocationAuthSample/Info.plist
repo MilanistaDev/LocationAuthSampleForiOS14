@@ -61,15 +61,15 @@
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>このアプリはお近くのショップからのお知らせ、イベント情報を通知するために位置情報サービスを利用します。ショップから配信する位置連動の情報をリアルタイムに受け取りたい方は「常に許可」を選択してください。またiOS 14の端末をご利用の方は「正確な位置情報」は「オン」のままにしてください。</string>
+	<string>This app is a sample app about location information. Please allow the use of location information. Also, if you are using an iOS 14 device, leave "Precise" as "On".</string>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>このアプリはお近くのショップからのお知らせ、イベント情報を通知するために位置情報サービスを利用します。ショップから配信する位置連動の情報をリアルタイムに受け取りたい方は「常に許可」を選択してください。またiOS 14の端末をご利用の方は「正確な位置情報」は「オン」のままにしてください。</string>
+	<string>This app is a sample app about location information. Please allow the use of location information. Also, if you are using an iOS 14 device, leave "Precise" as "On".</string>
 	<key>NSLocationAlwaysUsageDescription</key>
-	<string>このアプリはお近くのショップからのお知らせ、イベント情報を通知するために位置情報サービスを利用します。ショップから配信する位置連動の情報をリアルタイムに受け取りたい方は「常に許可」を選択してください。またiOS 14の端末をご利用の方は「正確な位置情報」は「オン」のままにしてください。</string>
+	<string>This app is a sample app about location information. Please allow the use of location information. Also, if you are using an iOS 14 device, leave "Precise" as "On".</string>
 	<key>NSLocationTemporaryUsageDescriptionDictionary</key>
 	<dict>
 		<key>WantsToPreciseLocForNotice</key>
-		<string>現在地に基づいたショップからのお知らせ、イベント情報を取得したい場合は、「正確な位置情報」を「オン」にしてください。</string>
+		<string>If you want to get accurate location information, set "Precise: Off" to "Precise: On".</string>
 	</dict>
 </dict>
 </plist>
