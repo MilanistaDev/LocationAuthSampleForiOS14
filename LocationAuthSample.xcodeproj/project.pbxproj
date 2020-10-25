@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		FDD3A2692545B5D0001CAA82 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD3A2682545B5D0001CAA82 /* AppDelegate.swift */; };
 		FDD3A26B2545B5D0001CAA82 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD3A26A2545B5D0001CAA82 /* SceneDelegate.swift */; };
-		FDD3A26D2545B5D0001CAA82 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD3A26C2545B5D0001CAA82 /* ViewController.swift */; };
 		FDD3A2702545B5D0001CAA82 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDD3A26E2545B5D0001CAA82 /* Main.storyboard */; };
 		FDD3A2722545B5D0001CAA82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDD3A2712545B5D0001CAA82 /* Assets.xcassets */; };
 		FDD3A2752545B5D0001CAA82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDD3A2732545B5D0001CAA82 /* LaunchScreen.storyboard */; };
 		FDD3A2802545B5D0001CAA82 /* LocationAuthSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD3A27F2545B5D0001CAA82 /* LocationAuthSampleTests.swift */; };
 		FDD3A28B2545B5D0001CAA82 /* LocationAuthSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD3A28A2545B5D0001CAA82 /* LocationAuthSampleUITests.swift */; };
+		FDD3A29F2545B820001CAA82 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDD3A29E2545B820001CAA82 /* Map.storyboard */; };
+		FDD3A2AA2545B857001CAA82 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDD3A2A92545B857001CAA82 /* Settings.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +39,6 @@
 		FDD3A2652545B5D0001CAA82 /* LocationAuthSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocationAuthSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDD3A2682545B5D0001CAA82 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDD3A26A2545B5D0001CAA82 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FDD3A26C2545B5D0001CAA82 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FDD3A26F2545B5D0001CAA82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FDD3A2712545B5D0001CAA82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FDD3A2742545B5D0001CAA82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +49,8 @@
 		FDD3A2862545B5D0001CAA82 /* LocationAuthSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocationAuthSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDD3A28A2545B5D0001CAA82 /* LocationAuthSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationAuthSampleUITests.swift; sourceTree = "<group>"; };
 		FDD3A28C2545B5D0001CAA82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDD3A29E2545B820001CAA82 /* Map.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
+		FDD3A2A92545B857001CAA82 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +103,9 @@
 			children = (
 				FDD3A2682545B5D0001CAA82 /* AppDelegate.swift */,
 				FDD3A26A2545B5D0001CAA82 /* SceneDelegate.swift */,
-				FDD3A26C2545B5D0001CAA82 /* ViewController.swift */,
 				FDD3A26E2545B5D0001CAA82 /* Main.storyboard */,
+				FDD3A29E2545B820001CAA82 /* Map.storyboard */,
+				FDD3A2A92545B857001CAA82 /* Settings.storyboard */,
 				FDD3A2712545B5D0001CAA82 /* Assets.xcassets */,
 				FDD3A2732545B5D0001CAA82 /* LaunchScreen.storyboard */,
 				FDD3A2762545B5D0001CAA82 /* Info.plist */,
@@ -234,6 +237,8 @@
 				FDD3A2752545B5D0001CAA82 /* LaunchScreen.storyboard in Resources */,
 				FDD3A2722545B5D0001CAA82 /* Assets.xcassets in Resources */,
 				FDD3A2702545B5D0001CAA82 /* Main.storyboard in Resources */,
+				FDD3A29F2545B820001CAA82 /* Map.storyboard in Resources */,
+				FDD3A2AA2545B857001CAA82 /* Settings.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +263,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDD3A26D2545B5D0001CAA82 /* ViewController.swift in Sources */,
 				FDD3A2692545B5D0001CAA82 /* AppDelegate.swift in Sources */,
 				FDD3A26B2545B5D0001CAA82 /* SceneDelegate.swift in Sources */,
 			);
