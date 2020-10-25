@@ -11,15 +11,29 @@
         <!--Map-->
         <scene sceneID="sIM-hk-Ugh">
             <objects>
-                <viewController id="QDy-a3-rqf" sceneMemberID="viewController">
+                <viewController id="QDy-a3-rqf" customClass="MapViewController" customModule="LocationAuthSample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aao-9d-M79">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="frH-zu-btT">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                            </mapView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="7h4-4p-Q8C"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="frH-zu-btT" firstAttribute="leading" secondItem="7h4-4p-Q8C" secondAttribute="leading" id="5Dt-DM-PiP"/>
+                            <constraint firstItem="frH-zu-btT" firstAttribute="top" secondItem="aao-9d-M79" secondAttribute="top" id="cKv-UO-Ywe"/>
+                            <constraint firstItem="7h4-4p-Q8C" firstAttribute="trailing" secondItem="frH-zu-btT" secondAttribute="trailing" id="mmU-ST-PYm"/>
+                            <constraint firstItem="7h4-4p-Q8C" firstAttribute="bottom" secondItem="frH-zu-btT" secondAttribute="bottom" id="x7o-tU-lAr"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Map" image="mappin.circle.fill" catalog="system" id="zmG-Hv-yPf"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="mapView" destination="frH-zu-btT" id="Nwv-ra-Vf4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qs4-ae-p7a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
