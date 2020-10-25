@@ -222,10 +222,9 @@
 			};
 			buildConfigurationList = FDD3A2602545B5D0001CAA82 /* Build configuration list for PBXProject "LocationAuthSample" */;
 			compatibilityVersion = "Xcode 9.3";
-			developmentRegion = ja_JP;
+			developmentRegion = ja;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				ja_JP,
 				ja,
 				Base,
 			);
